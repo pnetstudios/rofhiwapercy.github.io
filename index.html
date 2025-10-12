@@ -1,92 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Rofhiwa Percy - Personal Site</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-      color: #222;
-    }
-    header {
-      background: #0d6efd;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    main {
-      max-width: 700px;
-      margin: 2rem auto;
-      background: #fff;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
-      border-radius: 8px;
-      padding: 2rem;
-    }
-    h1 {
-      margin-bottom: 0.5rem;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    .profile-img {
-      width: 120px;
-      border-radius: 50%;
-      margin-bottom: 1rem;
-      border: 4px solid #fff;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    }
-    footer {
-      text-align: center;
-      padding: 1rem 0;
-      color: #888;
-      margin-top: 2rem;
-    }
-    a {
-      color: #0d6efd;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Coach & Entrepreneur</title>
+  <meta name="description" content="Your Name — Chess coach offering lessons for beginners to advanced players. Freelance, online and in-person." />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <img src="https://avatars.githubusercontent.com/rofhiwapercy" alt="Rofhiwa Percy" class="profile-img">
-    <h1>Rofhiwa Percy</h1>
-    <p>Welcome to my personal website!</p>
-  </header>
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>
-        Hi! please note this website is still under development and all links have been deactivated.
-      </p>
-    </section>
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <a # target="_blank">This Website</a>
-        </li>
-        <!-- Add more projects here -->
-      </ul>
-    </section>
-    <section>
-      <h2>Contact</h2>
-      <p>
-        You can find me on 
-        <a href="https://github.com/rofhiwapercy" target="_blank">GitHub</a>
-        or reach out via email: <a #>Not available yet</a>
-      </p>
-    </section>
-  </main>
-  <footer>
-    &copy; 2025 Rofhiwa Percy. All rights reserved.
-  </footer>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Your Name</a>
+      <nav class="nav">
+        <a href="about.html">About</a>
+        <a href="chess.html">Chess Classes</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Hi — I’m <strong>Your Name</strong></h1>
+        <p class="tagline">Chess coach • Teacher • Strategist — Classes for kids, teens & adults</p>
+        <p>I help students build tactical skills, strategic understanding and competitive confidence. Lessons available online and in-person.</p>
+        <div class="cta-row">
+          <a class="btn-primary" href="chess.html">View Chess Classes</a>
+          <a class="btn-ghost" href="contact.html">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-image" aria-hidden="true">
+        <!-- Replace with your own image -->
+        <div class="avatar">YN</div>
+      </div>
+    </section>
+
+    <section class="features">
+      <article class="card">
+        <h3>1-on-1 Coaching</h3>
+        <p>Customized lessons that target each student’s strengths and weaknesses.</p>
+      </article>
+      <article class="card">
+        <h3>Group Classes</h3>
+        <p>Small groups for interactive practice and weekly puzzles.</p>
+      </article>
+      <article class="card">
+        <h3>Tournaments & Preparation</h3>
+        <p>Game analysis, opening prep and psychological readiness for tournaments.</p>
+      </article>
+    </section>
+
+    <section class="testimonials">
+      <h2>What students say</h2>
+      <blockquote>"Great teacher — my rating improved and I enjoy playing again!" — A. Student</blockquote>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name — <a href="chess.html">Chess Classes</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
