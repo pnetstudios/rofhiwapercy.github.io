@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Your Name</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Your Name</a>
+      <nav class="nav">
+        <a href="about.html" aria-current="page">About</a>
+        <a href="chess.html">Chess Classes</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="content">
+      <h1>About Me</h1>
+      <p>Hello — I'm <strong>Your Name</strong>. I teach chess to students of all ages. I moved from Nigeria to Canada to expand my teaching and freelance work. I focus on tactical puzzles, structured study plans, and game analysis.</p>
+
+      <h2>Background</h2>
+      <ul>
+        <li>FIDE rating (if you have one) — e.g., 1600</li>
+        <li>Coaching experience: X years</li>
+        <li>Online platforms: Zoom, Lichess, Chess.com</li>
+      </ul>
+
+      <h2>What I offer</h2>
+      <p>1-on-1 lessons, small group sessions, tournament preparation, and chess enrichment for schools.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year2"></span> Your Name</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+</body>
+</html>
