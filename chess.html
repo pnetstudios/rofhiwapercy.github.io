@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chess Classes — Your Name</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Your Name</a>
+      <nav class="nav">
+        <a href="about.html">About</a>
+        <a href="chess.html" aria-current="page">Chess Classes</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="content">
+      <h1>Chess Classes</h1>
+      <p>I run structured lessons for different levels. Below are typical packages — contact to schedule a trial lesson.</p>
+
+      <div class="packages">
+        <article class="package">
+          <h3>Beginner (Ages 6+)</h3>
+          <p>Basics: pieces, rules, simple tactics. 45 minutes per lesson.</p>
+          <p class="price">From $15 / lesson</p>
+        </article>
+
+        <article class="package">
+          <h3>Intermediate</h3>
+          <p>Strategy, middlegame planning, basic endgames. 60 minutes per lesson.</p>
+          <p class="price">From $25 / lesson</p>
+        </article>
+
+        <article class="package">
+          <h3>Advanced & Tournament Prep</h3>
+          <p>Opening prep, deep analysis, psychological prep. 60–90 minutes.</p>
+          <p class="price">From $40 / lesson</p>
+        </article>
+      </div>
+
+      <hr>
+
+      <h2>Sign up for a trial lesson</h2>
+      <p>Fill the form and I’ll contact you to arrange a time.</p>
+
+      <!-- SIGN-UP FORM -->
+      <!-- Option A: Static (Formspree) - easiest for GitHub Pages -->
+      <form id="signupForm" class="signup-form">
+        <label>
+          Full name
+          <input name="name" type="text" required />
+        </label>
+
+        <label>
+          Email
+          <input name="email" type="email" required />
+        </label>
+
+        <label>
+          Phone (optional)
+          <input name="phone" type="tel" />
+        </label>
+
+        <label>
+          Level
+          <select name="level" required>
+            <option value="">-- Choose --</option>
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+          </select>
+        </label>
+
+        <label>
+          Preferred times / notes
+          <textarea name="notes" rows="3" placeholder="Weekends evenings, timezone, etc."></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Request Trial</button>
+          <button type="button" id="clearBtn" class="btn-ghost">Clear</button>
+        </div>
+
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+
+      <p class="hint">This form can submit via Formspree (no backend) or to your own API (see README below).</p>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year3"></span> Your Name</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+</body>
+</html>
